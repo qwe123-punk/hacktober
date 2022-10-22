@@ -9,7 +9,9 @@ my_dff d2(slow_clk, Q1,Q2 );
 assign Q2_bar = ~Q2;
 assign pb_out = Q1 & Q2_bar;
 endmodule
+
 // Slow clock for debouncing 
+
 module clock_div(input Clk_100M, output reg slow_clk
 
     );
